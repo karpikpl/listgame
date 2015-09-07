@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error &ndash; Kattis, Kattis</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+    <!-- Fonts/Icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic,800italic%7CMerriweather:400,400italic,700" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Editable and Select2 -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon" />
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="/css/basic_style.css">
+    <link rel="stylesheet" href="/css/custom_style.css">
+    <link rel="stylesheet" href="/css/clars.css">
+    <link rel="stylesheet" href="/css/problem_style.css">
+
+    <script type="text/javascript">
+        window.page_loaded_at = new Date();
+        jQuery.noConflict();
+        var $j = jQuery;
+    </script>
+
+    
+
+        <script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26661929-8', 'auto');
+  ga('set', 'forceSSL', true);
+  ga('send', 'pageview');
+
+</script>
+
+    
+
+    
+</head>
+
+<body class="">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="wrapper">
+    <header class="header">
+    
+    <div class="wrap">
+        <div class="app-side fl">
+            <a href="/" class="logo logo-open"><img src="/download/site-logo" alt="" /></a>
+
+            <nav class="main-nav">
+                <ul>
+                                                                    
+                        <li class=""><a href="/problems">Problems</a></li>
+                                                                    
+                        <li class=""><a href="/contests">Contests</a></li>
+                                                                    
+                        <li class=""><a href="/ranklist">Ranklists</a></li>
+                                                                    
+                        <li class=""><a href="/jobs">Jobs</a></li>
+                                                                    
+                        <li class=""><a href="/help">Help</a></li>
+                    
+                                                        </ul>
+            </nav>
+        </div>
+        <div class="user-side fr">
+
+            <nav class="user-nav">
+                <ul class="user-nav-ul">
+                    
+                                            <li><a class="btn dark-bg menu_login" href="/login">Log in</a></li>
+                                    </ul>
+
+            </nav>
+
+        </div>
+    </div>
+</header>
+
+
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+
+    
+
+    <div class="wrap">
+        
+
+
+        <div class="page-content boxed clearfix">
+            <section class="box clearfix main-content">
+                
+                    <div class="page-headline clearfix">
+                        <div class="fl">
+                            <h1>Error</h1>
+                        </div>
+                    </div>
+                
+                
+
+            <p>Sample data not available</p>
+    
+
+            </section>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-info col-md-10 ">
+                
+                            </div>
+            <div class="footer-powered col-md-2">
+                <h4>Powered by Kattis</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="/js/boilerplate/plugins.js" type="text/javascript"></script>
+<script src="/js/site/main.js" type="text/javascript"></script>
+<script>initSite();</script>
+
+</body>
+</html>
