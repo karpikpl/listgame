@@ -15,7 +15,7 @@ namespace KattisSolution
         public static void Solve(Stream stdin, Stream stdout)
         {
             IScanner scanner = new OptimizedIntReader(stdin);
-            // uncomment when you need more advanced reader
+            // uncomment when you need more advanced reader 
             // scanner = new Scanner(stdin);
             BufferedStdoutWriter writer = new BufferedStdoutWriter(stdout);
 
@@ -35,14 +35,16 @@ namespace KattisSolution
             var sqrt = Math.Sqrt(input);
 
             var result = 0;
-            var a = 3;
 
-            while (input % 2 == 0)
-            {
-                result++;
-                input /= 2;
-                Debug.Write("2 * ");
-            }
+            if (input != 2)
+                while (input % 2 == 0)
+                {
+                    result++;
+                    input /= 2;
+                    Debug.Write("2 * ");
+                }
+
+            var a = 3;
 
             while (a <= sqrt)
             {
@@ -58,7 +60,7 @@ namespace KattisSolution
                 }
             }
 
-            if (input != 1 && input != copy)
+            if (input != 1)
             {
                 result++;
                 Debug.Write(input);

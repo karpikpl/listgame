@@ -64,6 +64,7 @@
     <Compile Include="Helpers.Tests\TestCaseFinderTests.cs" />
     <Compile Include="InputOutput.cs" />
     <Compile Include="Helpers\TestCaseFinder.cs" />
+    <Compile Include="Marcin.cs" />
     <Compile Include="Primes.cs" />
     <Compile Include="Tests\CustomTest.cs" />
     <Compile Include="Tests\FileInputTest.cs" />

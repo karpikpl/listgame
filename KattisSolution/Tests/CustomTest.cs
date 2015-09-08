@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
@@ -80,7 +83,7 @@ namespace KattisSolution.Tests
         public void SampleTest_WithStringData982451653_Should_Pass()
         {
             // Arrange
-            const string expectedAnswer = "0\n";
+            const string expectedAnswer = "1\n";
             using (var input = new MemoryStream(Encoding.UTF8.GetBytes("982451653\n")))
             using (var output = new MemoryStream())
             {
@@ -116,7 +119,7 @@ namespace KattisSolution.Tests
         public void SampleTest_WithStringData113_Should_Pass()
         {
             // Arrange
-            const string expectedAnswer = "0\n";
+            const string expectedAnswer = "1\n";
             using (var input = new MemoryStream(Encoding.UTF8.GetBytes("113\n")))
             using (var output = new MemoryStream())
             {
@@ -177,6 +180,47 @@ namespace KattisSolution.Tests
 
                 // Assert
                 Assert.That(result, Is.EqualTo(expectedAnswer));
+            }
+        }
+
+        [Test]
+        public void SampleTest_WithStringDataLong_Should_Pass()
+        {
+            // Arrange
+            const int data = 2 * 2 * 2 * 2 * 3 * 3 * 5 * 7 * 11 * 12 * 13 * 17;
+            const string expectedAnswer = "14\n";
+            using (var input = new MemoryStream(Encoding.UTF8.GetBytes(data + "\n")))
+            using (var output = new MemoryStream())
+            {
+                // Act
+                Program.Solve(input, output);
+                var result = Encoding.UTF8.GetString(output.ToArray());
+
+                // Assert
+                Assert.That(result, Is.EqualTo(expectedAnswer));
+            }
+        }
+
+        [Test]
+        public void SampleTest_WithPrimes_Should_Pass()
+        {
+            // Arrange
+            int[] primes = new Primes().PrimeNumbers.Split(new[] { "\t", "\n" }, StringSplitOptions.RemoveEmptyEntries).Select(p => Int32.Parse(p.Trim())).ToArray();
+            foreach (var primeNumber in primes)
+            {
+                Debug.WriteLine("Testing for {0}", primeNumber);
+                int data = primeNumber;
+                const string expectedAnswer = "1\n";
+                using (var input = new MemoryStream(Encoding.UTF8.GetBytes(data + "\n")))
+                using (var output = new MemoryStream())
+                {
+                    // Act
+                    Program.Solve(input, output);
+                    var result = Encoding.UTF8.GetString(output.ToArray());
+
+                    // Assert
+                    Assert.That(result, Is.EqualTo(expectedAnswer));
+                }
             }
         }
     }
