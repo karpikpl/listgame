@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using KattisSolution.IO;
 
@@ -20,9 +21,51 @@ namespace KattisSolution
 
             var input = scanner.NextInt();
 
-            writer.Write(input * 5);
+            int result = SimpleSolution(input);
+
+            writer.Write(result);
             writer.Write("\n");
             writer.Flush();
+        }
+
+        private static int SimpleSolution(int input)
+        {
+            Debug.Write(input + " = ");
+            var copy = input;
+            var sqrt = Math.Sqrt(input);
+
+            var result = 0;
+            var a = 3;
+
+            while (input % 2 == 0)
+            {
+                result++;
+                input /= 2;
+                Debug.Write("2 * ");
+            }
+
+            while (a <= sqrt)
+            {
+                if (input % a == 0)
+                {
+                    input /= a;
+                    result++;
+                    Debug.Write(a + " * ");
+                }
+                else
+                {
+                    a += 2;
+                }
+            }
+
+            if (input != 1 && input != copy)
+            {
+                result++;
+                Debug.Write(input);
+            }
+
+            Debug.WriteLine(" !");
+            return result;
         }
     }
 }
