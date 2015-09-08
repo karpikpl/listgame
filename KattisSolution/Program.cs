@@ -31,7 +31,6 @@ namespace KattisSolution
         private static int SimpleSolution(int input)
         {
             Debug.Write(input + " = ");
-            var copy = input;
             var sqrt = Math.Sqrt(input);
 
             var result = 0;
